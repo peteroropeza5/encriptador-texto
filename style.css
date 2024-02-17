@@ -1,5 +1,9 @@
 /*Estilo del index*/ 
 
+body{
+    font-family: 'Montserrat', sans-serif;
+ }
+
 header{
     text-align: right;
     background: #bbbbbb;
@@ -10,14 +14,21 @@ main{
 }
 
 .area-encriptado{
-
     width: 940px;
-    margin: 0 auto;
+    margin: 2em auto;
+}
+
+.indicaciones{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: rgb(15, 17, 114);
 }
 
 .entrada-texto{
-    margin: 2em 300px 2em 0;
+    display: inline block;
     font-size: 20px;
+    color: rgb(38, 38, 206);
     border: 2px solid #fefefe;
     background: #fefefe;
     padding: 20px 2px;
@@ -26,12 +37,9 @@ main{
 }
 
 ::placeholder{
+    font-family: 'Montserrat', sans-serif;
     color: rgb(38, 38, 206);
     font-size: 1em;
-}
-
-.botones{
-    margin: 2em 0;
 }
 
 .area-respuesta{
@@ -40,12 +48,24 @@ main{
 }
 
 .salida-texto{
-    display: block;
-    margin: 1em auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: rgb(38, 38, 206);
+    margin: 0 0 0 400px;
     border: 5px solid #fefefe;
     border-radius: 10px 10px 10px 10px;
     padding: 0 5em 20em 0;
     box-shadow: 5px 5px 15px 5px #464545;
+    outline: none;
+}
+
+.botones{
+    display: inline-block;
+    padding: 50px 40px;
+}
+
+.boton-copiar{
+    margin: 0 0 0 495px;
 }
 
 footer{
@@ -53,3 +73,10 @@ footer{
     background: #bbbbbb;
 }
 
+.imagen-footer{
+    transition: 1s;
+}
+
+.imagen-footer:hover{
+    opacity: 20%;
+}
