@@ -1,0 +1,55 @@
+/*Estilo del index*/ 
+
+header{
+    text-align: right;
+    background: #bbbbbb;
+}
+
+main{
+    background: #fefefe;
+}
+
+.area-encriptado{
+
+    width: 940px;
+    margin: 0 auto;
+}
+
+.entrada-texto{
+    margin: 2em 300px 2em 0;
+    font-size: 20px;
+    border: 2px solid #fefefe;
+    background: #fefefe;
+    padding: 20px 2px;
+    cursor: pointer;
+    outline: none;
+}
+
+::placeholder{
+    color: rgb(38, 38, 206);
+    font-size: 1em;
+}
+
+.botones{
+    margin: 2em 0;
+}
+
+.area-respuesta{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.salida-texto{
+    display: block;
+    margin: 1em auto;
+    border: 5px solid #fefefe;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0 5em 20em 0;
+    box-shadow: 5px 5px 15px 5px #464545;
+}
+
+footer{
+    padding: 40px;
+    background: #bbbbbb;
+}
+
