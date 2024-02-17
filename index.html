@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="reset.css">
+        <link href="https: //fonts.googleapis.com/css2? family= Montserrat:wght@300 & display=swap" rel="stylesheet">
         <title>Encriptador de Texto</title>
     </head>
 
@@ -15,26 +16,32 @@
         </header>
 
         <main>
-
+            
             <section class="area-encriptado">
+                
+                <p class="indicaciones">Sólo se permiten textos con minúsculas y sin acentos</p>
+                <input type="text" placeholder="Por favor ingrese el texto"  class="entrada-texto" id="entrada">
+                <textarea class="salida-texto"></textarea>
 
-                    <input type="text" placeholder="Por favor ingrese el texto"  class="entrada-texto">
+            </section>
+
+            <section class="area-respuesta">
 
                 <div class="botones">
                     <button>Encriptar</button>
                     <button>Desencriptar</button>
                 </div>
-            </section>
 
-            <section class="area-respuesta">
-                <input type="text" class="salida-texto">
                 <button class="boton-copiar">Copiar</button>
+
             </section>
 
         </main>
 
         <footer>
+
             <img src="imagenes/candado.png" width="177" height="177" alt="Imagen footer de un encriptado" class="imagen-footer">
+
         </footer>
 
     </body>
