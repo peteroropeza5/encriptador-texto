@@ -1,82 +1,138 @@
 /*Estilo del index*/ 
-
-body{
-    font-family: 'Montserrat', sans-serif;
- }
-
 header{
-    text-align: right;
-    background: #bbbbbb;
-}
-
-main{
     background: #fefefe;
+    padding: 20px 0;
 }
 
-.area-encriptado{
+.caja{
     width: 940px;
+    position: relative;
     margin: 2em auto;
 }
 
-.indicaciones{
-    font-family: 'Montserrat', sans-serif;
+header h1{
+    color: rgb(3, 3, 97);
     font-weight: bold;
-    font-size: 2em;
+    font-size: 40px;
+    font-family: "Anta", sans-serif;
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+.area-encriptado{
+    background: linear-gradient(#fefefe,#b3b5b8);
+}
+
+.indicaciones{
+    margin: 3em 0 0 40px;
+    font-family: "Anta", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(3, 3, 97);
+}
+
+::placeholder{
     color: rgb(15, 17, 114);
 }
 
 .entrada-texto{
-    display: inline block;
-    font-size: 20px;
-    color: rgb(38, 38, 206);
-    border: 2px solid #fefefe;
-    background: #fefefe;
-    padding: 20px 2px;
-    cursor: pointer;
+    font-family: "Anta", sans-serif;
+    color: rgb(15, 17, 114);
+    font-size: 18px;
+    font-weight: bold;
+    background: none;
+    border: none;
     outline: none;
+    width: 380px;
+    height: 430px;
+    margin: 2em 200px 1em 80px;
+    transition: 1s;
+    resize: none;
 }
 
-::placeholder{
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(38, 38, 206);
-    font-size: 1em;
-}
-
-.area-respuesta{
-    width: 940px;
-    margin: 0 auto;
+.entrada-texto:hover{
+    font-size: 18.5px;
 }
 
 .salida-texto{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    color: rgb(38, 38, 206);
-    margin: 0 0 0 400px;
-    border: 5px solid #fefefe;
-    border-radius: 10px 10px 10px 10px;
-    padding: 0 5em 20em 0;
-    box-shadow: 5px 5px 15px 5px #464545;
+    font-family: "Anta", sans-serif;
+    color: rgb(15, 17, 114);
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background:#dcdcdc;
+    box-shadow: 2px 3px 3px 3px #848484;
     outline: none;
+    border-radius: 10px;
+    width: 380px;
+    height: 430px;
+    transition: 1s;
+    resize: none;
+}
+
+.salida-texto:hover{
+    font-size: 18.5px;
+    width: 385px;
+    height: 435px;
+}
+
+.area-respuesta{
+    background: linear-gradient(#b3b5b8,#848484);
+    padding: 50px 0 125px 0;
 }
 
 .botones{
-    display: inline-block;
-    padding: 50px 40px;
+    display: inline;
+    padding: 0 265px 0 80px;
 }
 
-.boton-copiar{
-    margin: 0 0 0 495px;
+.tam-botones{
+    border: none;
+    border-radius: 5px;
+    background: #dcdcdc;
+    font-family: "Anta", sans-serif;
+    color: rgb(15, 17, 114);
+    font-size: 18px;
+    width: 15%;
+    height: 40px;
+    cursor: pointer;
+    transition: 500ms;
+    font-weight: bold;
+}
+
+.tam-botones:hover{
+    font-size: 19px;
+    width: 16%;
+    height: 45px;
 }
 
 footer{
-    padding: 40px;
-    background: #bbbbbb;
+    text-align: center;
+    background: #848484;
 }
 
-.imagen-footer{
+.imagen-candado{
     transition: 1s;
 }
 
-.imagen-footer:hover{
-    opacity: 20%;
+.imagen-candado:hover{
+    width: 20%;
+    height: 20%;
+}
+
+#candado-chico:hover{
+    width: 8%;
+    height: 8%;
+}
+
+.autor{
+    font-family: "Anta", sans-serif;
+    font-size: 13px;
+    padding: 40px;
+    transition: 1.5s;
+}
+
+.autor:hover{
+    font-size: 14px;
 }
