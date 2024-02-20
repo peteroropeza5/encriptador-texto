@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="reset.css">
-        <link href="https: //fonts.googleapis.com/css2? family= Montserrat:wght@300 & display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
         <title>Encriptador de Texto</title>
     </head>
@@ -28,19 +27,19 @@
             <section class="area-encriptado">
                 
                 <p class="indicaciones">Sólo se permiten textos con <br>minúsculas y sin caracteres especiales</p>
-                <textarea type="text" class="entrada-texto" placeholder="Por favor ingrese el texto"></textarea> 
-                <textarea type="text" class="salida-texto"></textarea>
+                <textarea type="text" class="entrada-texto" placeholder="Por favor ingrese el texto" id="entradaTexto" required></textarea> 
+                <textarea type="text" class="salida-texto" id="salidaTexto"></textarea>
 
             </section>
 
             <section class="area-respuesta">
 
                 <div class="botones">
-                    <input type="button" value="Encriptar" class="tam-botones">
-                    <input type="button" value="Desencriptar" class="tam-botones">
+                    <input onclick="encriptarTexto();" type="button" value="Encriptar" class="tam-botones">
+                    <input onclick="desencriptarTexto();" type="button" value="Desencriptar" class="tam-botones">
                 </div>
 
-                <input type="button" value="Copiar" class="tam-botones">
+                <input onclick="copiar();" type="button" value="Copiar" class="tam-botones">
 
             </section>
 
@@ -53,8 +52,9 @@
                 <p>Challenge Encriptador - Alura Latam<br>Josué Yunuén Joaquín Oropeza - 2024</p>
             </div>
 
-
         </footer>
+
+        <script src="app.js" defer></script>
 
     </body>
 
